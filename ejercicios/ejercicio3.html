@@ -72,15 +72,14 @@ c.	Destaca los títulos con un color de fondo diferente.
 d.	Establece márgenes de separación entre los párrafos y títulos. -->
 
 
-<!-- 3.	Para la página anterior, crear un menú lateral con ítems enlazados con los 
- diferentes apartados del currículum. El menú debe permanecer fijo,
-  en la parte izquierda, mientras que el contenido debe ser “scrollable”. 
-  Los ítems del menú debe cambiar de color y con texto en negrita cuando pasamos 
-  el ratón por encima.
-  -->
+<!-- 3. Para la página anterior, crear un menú lateral con ítems enlazados con
+los diferentes apartados del currículum. El menú debe permanecer fijo, en la
+parte izquierda, mientras que el contenido debe ser “scrollable”. Los ítems del
+menú debe cambiar de color y con texto en negrita cuando pasamos el ratón por
+encima. -->
 
 
-<script src="script.js">
+<script>
     const menuItems = document.querySelectorAll('nav ul li a');
     
 
@@ -91,7 +90,7 @@ d.	Establece márgenes de separación entre los párrafos y títulos. -->
         });
 
         item.addEventListener('mouseout', () => {
-            item.style.color = '';
+            item.style.color = 'black';
             item.style.fontWeight = '';
         });
 
