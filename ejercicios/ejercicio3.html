@@ -15,44 +15,54 @@ c.	Experiencia laboral.
 d.	Formación complementaria.
 e.	Otras habilidades. -->
 
+<nav>
+    <ul>
+        <li><a href="#datos-personales">Datos Personales</a></li>
+        <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
+        <li><a href="#formacion-academica">Formación Académica</a></li>
+        <li><a href="#formacion-complementaria">Formación Complementaria</a></li>
+        <li><a href="#otras-habilidades">Otras Habilidades</a></li>
+    </ul>
+</nav>
+
 <h1>Currículum Vitae</h1>
 
-<section>
+<section id="datos-personales">
         <img src="Persona-trabajando-en-oficina-IA.webp" alt="Foto" width="150">
         <h2>Datos Personales</h2>
         <p>Nombre: Balbino</p>
         <p>Email: baltanyml@gmail.com</p>
         <p>Teléfono: 626370939</p>
     </section>
-    <section>
+<section id="experiencia-laboral">
         <h2>Experiencia laboral</h2>
         <ul>
             <li><p>Consultor PBC en NFORCE Operations</p></li>
             <li><p>Teleoperador en Konecta Group</p></li>
             <li><p>Desarrollador de aplicaciones en MacrosadSCA</p></li>
         </ul>
-    </section>
-    <section>
+</section>
+<section id="formacion-academica">
         <h2>Formación Académica</h2>
         <ul>
             <li><p>Grado superior en Desarrollo de aplicaciones multimedia</p></li>
             <li><p>Bachillerato de Ciencias Tecnologicas</p></li>
         </ul>
-    </section>
-    <section>
+</section>
+<section id="formacion-complementaria">
         <h2>Formación Complementaria</h2>
         <ul>
             <li><p>Curso de udemy EXCEL</p></li>
         </ul>
-    </section>
-    <section>
+</section>
+<section id="otras-habilidades">
         <h2>Otras habilidades</h2>
         <ul>
             <li><p>Manejo de GitHub</p></li>
             <li><p>Manejo de Docker</p></li>
             <li><p>Manejo de distintos SO:Kali,Ubuntu,Windows(11,10)</p></li>
         </ul>
-    </section>
+</section>
 
 <!-- 2.	Utiliza una hoja de estilos para definir los siguientes estilos para la página creada en el ejercicio 1.
 
@@ -61,6 +71,33 @@ b.	Haz que la fotografía quede en la parte superior izquierda de la página.
 c.	Destaca los títulos con un color de fondo diferente.
 d.	Establece márgenes de separación entre los párrafos y títulos. -->
 
+
+<!-- 3.	Para la página anterior, crear un menú lateral con ítems enlazados con los 
+ diferentes apartados del currículum. El menú debe permanecer fijo,
+  en la parte izquierda, mientras que el contenido debe ser “scrollable”. 
+  Los ítems del menú debe cambiar de color y con texto en negrita cuando pasamos 
+  el ratón por encima.
+  -->
+
+
+<script src="script.js">
+    const menuItems = document.querySelectorAll('nav ul li a');
+    
+
+    menuItems.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.color = 'blue';
+            item.style.fontWeight = 'bold';
+        });
+
+        item.addEventListener('mouseout', () => {
+            item.style.color = '';
+            item.style.fontWeight = '';
+        });
+
+});
+
+</script>
 
 </body>
 </html>
