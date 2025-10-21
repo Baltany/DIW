@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balbino Moyano</title>
+
+        <!-- bootstrap CDN -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <style>
+            body {
+                padding: 20px;
+            }
+
+            .header-title {
+                background-color: red;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 30px;
+                border-radius: 5px;
+            }
+
+            .foto-card {
+                height: 100%;
+            }
+
+            .foto-card img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .foto-card .card-body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-title">
+                <h1>Mi primera página Bootstrap</h1>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card foto-card shadow">
+                        <img
+                            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400"
+                            class="card-img-top"
+                            alt="Foto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Foto 1</h5>
+                            <p class="card-text">Descripción de la primera imagen. Esta foto muestra un hermoso felino.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card foto-card shadow">
+                        <img
+                            src="https://images.unsplash.com/photo-1573865526739-10c1d3a1f0cc?w=400"
+                            class="card-img-top"
+                            alt="Foto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Foto 2</h5>
+                            <p class="card-text">Descripción de la segunda imagen. Otro adorable gatito para admirar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card foto-card shadow">
+                        <img
+                            src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=400"
+                            class="card-img-top"
+                            alt="Foto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Foto 3</h5>
+                            <p class="card-text">Descripción de la tercera imagen. Un gato blanco muy especial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="alert alert-info" role="alert">
+                        <h4 class="alert-heading">Diseño Responsivo</h4>
+                        <p>En teléfonos móviles (sm), las fotos se apilan unas sobre otras usando la clase
+                            <strong>"card"</strong>
+                            de Bootstrap para cada foto/título.</p>
+                        <hr>
+                        <p class="mb-0">El sistema de grid de Bootstrap se adapta automáticamente a
+                            diferentes tamaños de pantalla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
