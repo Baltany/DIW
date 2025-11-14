@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+$font-family-menu: 'Montserrat', sans-serif;
+$font-family-base: 'Roboto', sans-serif;
+
+.navbar,
+.nav,
+.card-title {
+  font-family: $font-family-menu;
+}
+
+body {
+  font-family: $font-family-base;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    font-size: 0.875rem;
+  }
+  
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.1rem; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 0.875rem; }
+}
