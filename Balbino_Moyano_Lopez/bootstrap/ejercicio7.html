@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Balbino Moyano - Layout Responsivo</title>
+
+        <!-- bootstrap CDN -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <style>
+            .texto-box {
+                border: 2px solid #333;
+                padding: 20px;
+                min-height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            .texto1 {
+                background-color: #e74c3c;
+                color: white;
+            }
+            .texto2 {
+                background-color: #3498db;
+                color: white;
+            }
+            .texto3 {
+                background-color: #2ecc71;
+                color: white;
+            }
+            .texto4 {
+                background-color: #f39c12;
+                color: white;
+            }
+            .texto5 {
+                background-color: #9b59b6;
+                color: white;
+            }
+            .texto6 {
+                background-color: #1abc9c;
+                color: white;
+            }
+            .texto7 {
+                background-color: #34495e;
+                color: white;
+            }
+            .texto8 {
+                background-color: #e67e22;
+                color: white;
+            }
+            .texto9 {
+                background-color: #95a5a6;
+                color: white;
+            }
+            .texto10 {
+                background-color: #c0392b;
+                color: white;
+            }
+
+            body {
+                padding: 20px;
+            }
+
+            .titulo {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #2c3e50;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1 class="titulo">Balbino Moyano - Layout Responsivo con Bootstrap</h1>
+
+            <div class="row g-2">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="texto-box texto1" style="height: 100%;">
+                        Texto 1
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-9">
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <div class="texto-box texto2">Texto 2</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="texto-box texto3">Texto 3</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="texto-box texto4">Texto 4</div>
+                        </div>
+
+                        <div class="col-12 col-md-8">
+                            <div class="texto-box texto5">Texto 5</div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="texto-box texto6">Texto 6</div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="texto-box texto7">Texto 7</div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="texto-box texto8">Texto 8</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="texto-box texto9">Texto 9</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="texto-box texto10">Texto 10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        <h4>Comportamiento Responsivo:</h4>
+                        <ul>
+                            <li>
+                                <strong>Pantallas grandes (lg):</strong>
+                                Layout original con Texto 1 a la izquierda</li>
+                            <li>
+                                <strong>Pantallas medianas (md):</strong>
+                                Layout reorganizado según especificaciones</li>
+                            <li>
+                                <strong>Pantallas pequeñas (sm):</strong>
+                                Todos los textos apilados verticalmente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bootstrap CDN -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

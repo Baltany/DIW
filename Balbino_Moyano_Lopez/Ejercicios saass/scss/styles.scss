@@ -1,0 +1,9 @@
+@import 'colors';
+@import 'tipografy';
+@import 'borders';
+@import 'spacing';
+@import 'navbar';
+
+body {
+    font-family: $font-family-base;
+}
